@@ -6,9 +6,5 @@
 .DS_Store
 *.log
 .vscode/
-
-# Capacitor / iOS build artifacts
-/ios/
-/android/
-*.ipa
-*.xcarchive
+frontend/node_modules/
+frontend/dist/
