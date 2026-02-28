@@ -6,3 +6,5 @@
 .DS_Store
 *.log
 .vscode/
+frontend/node_modules/
+frontend/dist/
