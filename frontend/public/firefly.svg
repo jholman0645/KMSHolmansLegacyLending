@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Firefly body -->
+  <ellipse cx="50" cy="55" rx="15" ry="22" fill="#2d5a27" stroke="#4a9e3f" stroke-width="1.5"/>
+  <!-- Firefly head -->
+  <circle cx="50" cy="30" r="10" fill="#2d5a27" stroke="#4a9e3f" stroke-width="1.5"/>
+  <!-- Eyes -->
+  <circle cx="46" cy="28" r="2.5" fill="#00ff88"/>
+  <circle cx="54" cy="28" r="2.5" fill="#00ff88"/>
+  <!-- Glowing abdomen -->
+  <ellipse cx="50" cy="68" rx="8" ry="6" fill="#ffff00" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- Glow effect -->
+  <ellipse cx="50" cy="68" rx="12" ry="10" fill="#ffff00" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.05;0.3" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="12;16;12" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="10;14;10" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- Left wings -->
+  <ellipse cx="30" cy="45" rx="18" ry="7" fill="#a8d8a8" opacity="0.6" transform="rotate(-20 30 45)"/>
+  <ellipse cx="28" cy="58" rx="14" ry="6" fill="#a8d8a8" opacity="0.5" transform="rotate(10 28 58)"/>
+  <!-- Right wings -->
+  <ellipse cx="70" cy="45" rx="18" ry="7" fill="#a8d8a8" opacity="0.6" transform="rotate(20 70 45)"/>
+  <ellipse cx="72" cy="58" rx="14" ry="6" fill="#a8d8a8" opacity="0.5" transform="rotate(-10 72 58)"/>
+  <!-- Antennae -->
+  <line x1="46" y1="21" x2="38" y2="10" stroke="#4a9e3f" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="54" y1="21" x2="62" y2="10" stroke="#4a9e3f" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="38" cy="10" r="2" fill="#00ff88"/>
+  <circle cx="62" cy="10" r="2" fill="#00ff88"/>
+</svg>
