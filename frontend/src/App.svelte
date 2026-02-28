@@ -1,5 +1,10 @@
 <script>
   let count = $state(0)
+  let connected = $state(false)
+
+  function toggleConnected() {
+    connected = !connected
+  }
 </script>
 
 <main>
@@ -7,6 +12,10 @@
     <img src="/firefly.svg" class="logo firefly-logo" alt="Firefly Logo" />
     <h1>FUF Fintech Dashboard</h1>
     <p class="subtitle">KMS Holmans Legacy Lending</p>
+    <button class="glow-btn connect-tokens-btn" onclick={toggleConnected}
+      aria-label={connected ? 'Disconnect tokens' : 'Connect tokens'}>
+      {connected ? '✓ Tokens Connected' : '⚡ Connect Tokens'}
+    </button>
   </header>
 
   <section class="counter-section">
@@ -95,6 +104,28 @@
     color: #88aacc;
     font-size: 0.9rem;
     letter-spacing: 0.1em;
+  }
+
+  /* ── Connect Tokens Button ── */
+  .connect-tokens-btn {
+    margin-top: 1rem;
+    padding: 0.85rem 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    color: #a78bfa;
+    border-color: #a78bfa;
+    box-shadow: 0 0 14px #a78bfa66, inset 0 0 14px #a78bfa1a,
+                0 0 40px #a78bfa33;
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .connect-tokens-btn:hover {
+    box-shadow: 0 0 28px #a78bfa, 0 0 60px #a78bfaaa, inset 0 0 24px #a78bfa33;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 14px #a78bfa66, inset 0 0 14px #a78bfa1a, 0 0 40px #a78bfa33; }
+    50%       { box-shadow: 0 0 28px #a78bfacc, inset 0 0 20px #a78bfa33, 0 0 60px #a78bfa66; }
   }
 
   /* ── Counter Section ── */
