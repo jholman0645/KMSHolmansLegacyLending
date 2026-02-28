@@ -86,7 +86,67 @@ KMSHolmansLegacyLending/
 
 ---
 
-## 🔧 Setup Instructions
+## 📱 iOS App Store / TestFlight (Beta) Deployment
+
+### Prerequisites
+
+- macOS machine with Xcode 15+ installed
+- Apple Developer account (https://developer.apple.com)
+- Node.js 18+ installed
+
+### Setup
+
+1. **Install Capacitor dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Add the iOS platform**
+   ```bash
+   npm run ios:add
+   # or: npx cap add ios
+   ```
+
+3. **Sync web assets to iOS project**
+   ```bash
+   npm run ios:sync
+   # or: npx cap sync ios
+   ```
+
+4. **Open in Xcode**
+   ```bash
+   npm run ios:open
+   # or: npx cap open ios
+   ```
+
+### Configure in Xcode
+
+1. Select the project in the Navigator and set:
+   - **Bundle Identifier:** `com.kmsholman.legacylending`
+   - **Version:** `1.0` / **Build:** `1`
+   - **Signing & Capabilities:** Select your Apple Developer Team
+2. Add app icons: replace placeholder assets in `ios/App/App/Assets.xcassets/AppIcon.appiconset/`
+3. Add a launch screen image if desired
+
+### Submit to TestFlight (Beta)
+
+1. In Xcode, select **Product → Archive** (ensure a device or Generic iOS Device is selected)
+2. In the Organizer, click **Distribute App → App Store Connect → Upload**
+3. Log in to [App Store Connect](https://appstoreconnect.apple.com)
+4. Navigate to your app → **TestFlight** tab
+5. Add internal or external beta testers and send invitations
+
+### Progressive Web App (PWA) – Install on iOS without App Store
+
+Users can also install the site directly from Safari:
+
+1. Open `https://jholman0645.github.io/KMSHolmansLegacyLending/` in Safari
+2. Tap the **Share** button → **Add to Home Screen**
+3. The app will launch in full-screen standalone mode with the name **KMS Lending**
+
+---
+
+
 
 ### Local Development
 

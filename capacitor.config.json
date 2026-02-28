@@ -1,0 +1,21 @@
+{
+  "appId": "com.kmsholman.legacylending",
+  "appName": "KMS Legacy Lending",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  },
+  "ios": {
+    "contentInset": "automatic",
+    "preferredContentMode": "mobile",
+    "scrollEnabled": true,
+    "backgroundColor": "#0a0e1a"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#0a0e1a",
+      "showSpinner": false
+    }
+  }
+}

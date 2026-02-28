@@ -1,0 +1,42 @@
+{
+  "name": "KMS Holman's Legacy Lending",
+  "short_name": "KMS Lending",
+  "description": "Universal DeFi Highway – Multi-Chain Lending & Staking Platform",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0e1a",
+  "theme_color": "#06D6E0",
+  "lang": "en",
+  "categories": ["finance"],
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/mascot.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/kms-legacy-lending"
+    }
+  ],
+  "prefer_related_applications": false
+}
