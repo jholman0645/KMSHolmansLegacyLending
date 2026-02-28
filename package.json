@@ -1,0 +1,19 @@
+{
+  "name": "kms-legacy-lending",
+  "version": "1.0.0-beta.1",
+  "description": "KMS Holman's Legacy Lending – Universal DeFi Highway",
+  "private": true,
+  "scripts": {
+    "ios:add": "npx cap add ios",
+    "ios:sync": "npx cap sync ios",
+    "ios:open": "npx cap open ios",
+    "ios:build": "npx cap sync ios && npx cap copy ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  }
+}

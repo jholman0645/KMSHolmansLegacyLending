@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>KMS Holman's Legacy Lending - Universal DeFi Highway</title>
+
+    <!-- PWA / App Store meta tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#06D6E0">
+    <meta name="description" content="Universal DeFi Highway – Multi-Chain Lending &amp; Staking Platform">
+
+    <!-- Apple iOS / TestFlight meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="KMS Lending">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <link rel="apple-touch-startup-image" href="assets/logo.png">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -260,5 +273,13 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <!-- Service Worker registration for PWA / offline support -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
 </body>
 </html>
